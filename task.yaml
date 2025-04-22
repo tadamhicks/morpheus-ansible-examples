@@ -4,4 +4,4 @@
     - name: Write "hello world" to a file
       ansible.builtin.copy:
         dest: /tmp/file.txt
-        content: "hello world"
+        content: "{{ morpheus['customOptions']['customText'] }}" 
